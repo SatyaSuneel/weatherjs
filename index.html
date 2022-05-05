@@ -1,5 +1,4 @@
-
-  <!DOCTYPE html>  
+<!DOCTYPE html>  
  <html lang="en">  
  <head>  
    <meta charset="UTF-8">  
@@ -7,12 +6,12 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
    <title>Weather App</title>  
    <link rel="stylesheet" href="./assets/styles/style.css"> 
-   <<script src=",/assets/js/script.js"></script>
+   <script src=",/assets/js/script.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
  
  </head>  
- <body style="background :url(assets/images/ss.jpg);
+ <body style="background :url(assets/images/web.jpeg);
     background-repeat: no-repeat; 
     background-position: center;
     background-size: cover;">  
@@ -38,9 +37,16 @@
             <section class="display">
                 <div class="wrapper">
                     <h2 id="cityoutput"></h2>
-                    <p id="description"></p>
-                    <p id="temp"></p>
-                    <p id="wind"></p>
+                    <table>
+                      <tr>
+                        <td style="text-align:center/left/right;">
+                    <p id="description"></p></td></tr>
+                    <tr>
+                    <td style="text-align:center/left/right;"><p id="temp"></p></td></tr>
+                    <tr>
+                    <td style="text-align: center/left/right;"><p id="wind"></p></td></tr>
+                  </tr>
+                </table>
 
                 </div>
             </section>
@@ -88,9 +94,9 @@ function convertion(val){
             var wndspd = data['wind']['speed']
 //Now with the help of innerHTML you have to make arrangements to display all the information in the webpage.
             city.innerHTML=`Weather of <span>${nameval}<span>`
-            temp.innerHTML = `Temperature: <span>${ convertion(tempature)} C</span>`
-            description.innerHTML = `Sky Conditions: <span>${descrip}<span>`
-            wind.innerHTML = `Wind Speed: <span>${wndspd} km/h<span>`
+            temp.innerHTML = `   Temperature: <span>${ convertion(tempature)} C</span>`
+            description.innerHTML = `Sky Conditions :<span>${descrip}<span>`
+            wind.innerHTML =          ` Wind Speed: <span>${wndspd} km/h<span>`
 
         })
 
