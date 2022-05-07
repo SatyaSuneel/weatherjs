@@ -50,7 +50,7 @@ function convertion(val){
     })
 //If you click on the submit button without inputting anything in the input box or typing the wrong city name then the above text can be seen.
     </script>
-<!--     <script type="text/javascript">
+      <script type="text/javascript">
       let autocomplete;
       function initAutocomplete() {
         address1Field = document.querySelector("#cityinput");
@@ -123,7 +123,9 @@ function fillInAddress() {
   // entry of subpremise information such as apartment, unit, or floor number.
   address2Field.focus();
 }
-
+$(document).ready(function() {
+  $("#temp").css("color","blue");
+});
 window.initAutocomplete = initAutocomplete;
     </script> -->
         <script
